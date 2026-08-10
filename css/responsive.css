@@ -199,3 +199,9 @@
         width: 100%;
     }
 }
+
+@media (max-width: 768px) {
+    .site-brand-logo {
+        width: 175px;
+    }
+}
