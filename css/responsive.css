@@ -1,0 +1,201 @@
+@media (max-width: 960px) {
+    .site-header {
+        flex-wrap: wrap;
+        gap: 16px;
+        padding: 20px 0;
+    }
+
+    .main-navigation {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+        gap: 22px;
+        border-top: 1px solid rgba(255, 255, 255, 0.12);
+    }
+
+    .main-navigation a {
+        padding: 16px 0 0;
+    }
+
+    .experience-grid,
+    .practice-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .experience-card:nth-child(2) {
+        border-right: 0;
+    }
+
+    .approach-layout {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .approach-heading {
+        position: static;
+    }
+
+    .hero-layout {
+    grid-template-columns: 1fr;
+    }
+
+    .hero-content {
+        max-width: 720px;
+    }
+
+    .hero-portrait {
+        width: 300px;
+        margin: 30px auto 0;
+    }
+
+    .hero-portrait-image {
+        height: 300px;
+    }
+}
+
+@media (max-width: 680px) {
+    .container,
+    .site-header {
+        width: min(100% - 32px, 1120px);
+    }
+
+    .site-header {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .site-brand {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .schedule-button {
+        width: 100%;
+    }
+
+    .main-navigation {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .main-navigation a {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .home-hero {
+        padding: 84px 0 90px;
+    }
+
+    h1 {
+        font-size: 3.15rem;
+    }
+
+    .hero-actions,
+    .hero-actions .button {
+        width: 100%;
+    }
+
+    .experience-section,
+    .approach-section,
+    .practice-section,
+    .final-cta {
+        padding: 72px 0;
+    }
+
+    .experience-grid,
+    .practice-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .experience-card,
+    .experience-card:nth-child(2) {
+        border-right: 0;
+        border-bottom: 1px solid var(--border);
+    }
+
+    .experience-card:last-child {
+        border-bottom: 0;
+    }
+     .hero-portrait {
+        width: 260px;
+    }
+
+    .hero-portrait-image {
+        height: 260px;
+    }
+
+    .hero-portrait figcaption {
+        flex-direction: column;
+        gap: 2px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero.hero--san-antonio {
+        background-image:
+            linear-gradient(
+                rgba(5, 10, 16, 0.88),
+                rgba(5, 10, 16, 0.94)
+            ),
+            url("../images/heroes/san_antonio.png");
+
+        background-size: cover;
+        background-position: 72% center;
+        background-repeat: no-repeat;
+    }
+}
+
+/* ========================================
+   RESPONSIVE HERO PORTRAIT
+======================================== */
+
+@media (max-width: 900px) {
+    .hero-layout {
+        min-height: auto;
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .hero-content {
+        justify-self: center;
+
+        max-width: 680px;
+        padding: 72px 0 36px;
+
+        text-align: center;
+    }
+
+    .hero-actions {
+        justify-content: center;
+    }
+
+    .hero-portrait {
+        justify-self: center;
+
+        width: min(100%, 480px);
+        height: auto;
+    }
+
+    .hero-portrait-image {
+        width: 100%;
+        height: auto;
+        max-width: 480px;
+        max-height: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .hero-content {
+        padding-top: 56px;
+    }
+
+    .hero-portrait {
+        width: 105%;
+    }
+
+    .hero-portrait-image {
+        width: 100%;
+    }
+}
