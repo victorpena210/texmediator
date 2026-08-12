@@ -10,49 +10,241 @@
 
     <meta
         name="description"
-        content="Professional mediation services provided by Hugh Howerton through TexMediator."
+        content="Review half-day and full-day mediation pricing offered by Hugh Howerton through TexMediator."
     >
 
-    <title>Page Title | TexMediator</title>
+    <title>Mediation Pricing | TexMediator</title>
+
+    <link
+        rel="icon"
+        type="image/png"
+        href="images/logos/texmediator-favicon.png"
+    >
 
     <link rel="stylesheet" href="css/main.css">
-<link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/pricing.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Source+Sans+3:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
 </head>
 
 <body>
 
-    <!-- Shared navigation will be inserted here -->
-    <header id="site-header"></header>
+    <!-- Shared navigation -->
+    <div id="site-header"></div>
 
     <main>
-        <section class="page-hero">
-            <div class="container">
-                <h1>Page Heading</h1>
 
-                <p>
-                    Add the introductory text for this page here.
+        <!-- Pricing hero -->
+        <section class="pricing-page-hero">
+            <div class="container">
+                <p class="eyebrow">Mediation Fees</p>
+
+                <h1>Straightforward Mediation Pricing</h1>
+
+                <p class="pricing-page-lead">
+                    Review the available half-day and full-day
+                    mediation options for personal and commercial lines.
                 </p>
             </div>
         </section>
 
-        <section class="page-content">
+        <!-- Pricing options -->
+        <section
+            class="pricing-options"
+            aria-labelledby="pricing-options-heading"
+        >
             <div class="container">
-                <h2>Section Heading</h2>
 
-                <p>
-                    Add the main content for this page here.
-                </p>
+                <div class="section-heading">
+                    <p class="eyebrow">Session Options</p>
+
+                    <h2 id="pricing-options-heading">
+                        Choose the Time Your Case Requires
+                    </h2>
+
+                    <p>
+                        Mediation fees are charged per party.
+                        Morning, afternoon and full-day sessions
+                        are available.
+                    </p>
+                </div>
+
+                <div class="pricing-grid">
+
+                    <!-- Half-day pricing -->
+                    <article
+                        class="pricing-card"
+                        aria-labelledby="half-day-heading"
+                    >
+                        <p class="pricing-card-label">
+                            Morning or Afternoon
+                        </p>
+
+                        <h3 id="half-day-heading">
+                            Half-Day Mediation
+                        </h3>
+
+                        <p class="pricing-card-description">
+                            Choose one morning or afternoon
+                            mediation session.
+                        </p>
+
+                        <div class="pricing-rates">
+                            <div class="pricing-rate">
+                                <span>Personal lines</span>
+
+                                <strong>
+                                    $850
+                                    <small>per party</small>
+                                </strong>
+                            </div>
+
+                            <div class="pricing-rate">
+                                <span>Commercial lines</span>
+
+                                <strong>
+                                    $1,000
+                                    <small>per party</small>
+                                </strong>
+                            </div>
+                        </div>
+
+                        <div class="session-times">
+                            <h4>Available session times</h4>
+
+                            <ul>
+                                <li>
+                                    <strong>Morning:</strong>
+                                    9:30 a.m.–1:00 p.m.
+                                </li>
+
+                                <li>
+                                    <strong>Afternoon:</strong>
+                                    1:30 p.m.–5:00 p.m.
+                                </li>
+                            </ul>
+                        </div>
+
+                        <a
+                            href="schedule.html"
+                            class="button button-primary"
+                        >
+                            Schedule a Half-Day
+                        </a>
+                    </article>
+
+                    <!-- Full-day pricing -->
+                    <article
+                        class="pricing-card"
+                        aria-labelledby="full-day-heading"
+                    >
+                        <p class="pricing-card-label">
+                            Full-Day Session
+                        </p>
+
+                        <h3 id="full-day-heading">
+                            Full-Day Mediation
+                        </h3>
+
+                        <p class="pricing-card-description">
+                            Reserve a complete day for the mediation.
+                        </p>
+
+                        <div class="pricing-rates">
+                            <div class="pricing-rate">
+                                <span>Personal lines</span>
+
+                                <strong>
+                                    $1,700
+                                    <small>per party</small>
+                                </strong>
+                            </div>
+
+                            <div class="pricing-rate">
+                                <span>Commercial lines</span>
+
+                                <strong>
+                                    $2,000
+                                    <small>per party</small>
+                                </strong>
+                            </div>
+                        </div>
+
+                        <div class="session-times">
+                            <h4>Full-day session time</h4>
+
+                            <p>
+                                9:30 a.m.–5:00 p.m.
+                            </p>
+                        </div>
+
+                        <a
+                            href="schedule.html"
+                            class="button button-primary"
+                        >
+                            Schedule a Full Day
+                        </a>
+                    </article>
+
+                </div>
             </div>
         </section>
+
+        <!-- Party-fee clarification -->
+        <section class="party-fee-note">
+            <div class="container">
+                <div class="party-fee-note-inner">
+                    <p class="eyebrow">How Fees Are Calculated</p>
+
+                    <h2>One Lawyer, One Party</h2>
+
+                    <p>
+                        All parties represented by a single lawyer are
+                        deemed one “party” for purposes of the
+                        mediation fee.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to action -->
+        <section
+            class="pricing-page-cta"
+            aria-labelledby="pricing-cta-heading"
+        >
+            <div class="container">
+                <p class="eyebrow">Schedule Mediation</p>
+
+                <h2 id="pricing-cta-heading">
+                    Ready to Reserve a Session?
+                </h2>
+
+                <p>
+                    Request a morning, afternoon or full-day
+                    mediation session.
+                </p>
+
+                <a
+                    href="schedule.html"
+                    class="button button-primary"
+                >
+                    View Available Dates
+                </a>
+            </div>
+        </section>
+
     </main>
 
-    <!-- Shared footer will be inserted here -->
     <footer id="site-footer"></footer>
 
-    <!-- Loads shared elements such as the navbar and footer -->
     <script src="js/components.js"></script>
-
-    <!-- General website functionality -->
     <script src="js/script.js"></script>
 </body>
 </html>

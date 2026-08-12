@@ -16,7 +16,8 @@
     <title>Page Title | TexMediator</title>
 
     <link rel="stylesheet" href="css/main.css">
-<link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/schedule.css">
 </head>
 
 <body>
@@ -24,27 +25,65 @@
     <!-- Shared navigation will be inserted here -->
     <div id="site-header"></div>
 
-    <main>
-        <section class="page-hero">
-            <div class="container">
-                <h1>Page Heading</h1>
+ <main>
+    <section class="schedule-page-hero">
+        <div class="container">
+            <p class="eyebrow">Online Scheduling</p>
+
+            <h1>Schedule a Mediation</h1>
+
+            <p class="schedule-page-lead">
+                Choose a morning, afternoon or full-day Zoom
+                mediation with Hugh Howerton.
+            </p>
+        </div>
+    </section>
+
+    <section
+        class="scheduler-section"
+        aria-labelledby="scheduler-heading"
+    >
+        <div class="container">
+
+            <div class="schedule-introduction">
+                <p class="eyebrow">Available Dates</p>
+
+                <h2 id="scheduler-heading">
+                    Select Your Mediation Session
+                </h2>
 
                 <p>
-                    Add the introductory text for this page here.
+                    Sessions are available Monday through Friday
+                    with at least three days’ advance notice.
                 </p>
             </div>
-        </section>
 
-        <section class="page-content">
-            <div class="container">
-                <h2>Section Heading</h2>
+            <div class="scheduler-card">
+                <iframe src="https://app.acuityscheduling.com/schedule.php?owner=40116063&ref=embedded_csp" title="Schedule Appointment" width="100%" height="800" frameBorder="0" allow="payment"></iframe><script src="https://embed.acuityscheduling.com/js/embed.js" type="text/javascript"></script>
+            </div>
+
+            <div class="scheduling-notice">
+                <h3>Before Scheduling</h3>
 
                 <p>
-                    Add the main content for this page here.
+                    Fees are charged per party. Final payment
+                    instructions will be provided after the
+                    mediation has been scheduled.
                 </p>
+
+                <p>
+                    All cancellations and postponements must be
+                    submitted in writing.
+                </p>
+
+                <a href="cancellation-policy.html">
+                    Review the Cancellation Policy
+                </a>
             </div>
-        </section>
-    </main>
+
+        </div>
+    </section>
+</main>
 
     <!-- Shared footer will be inserted here -->
     <footer id="site-footer"></footer>

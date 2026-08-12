@@ -1,0 +1,175 @@
+/* ========================================
+   CANCELLATION POLICY PAGE
+======================================== */
+
+/* Page hero */
+
+.policy-page-hero {
+    position: relative;
+    overflow: hidden;
+    padding: 96px 0 104px;
+    background-color: #07101c;
+
+    background-image:
+        linear-gradient(
+            90deg,
+            rgba(5, 10, 16, 0.96) 0%,
+            rgba(5, 10, 16, 0.88) 40%,
+            rgba(5, 10, 16, 0.52) 67%,
+            rgba(5, 10, 16, 0.16) 100%
+        ),
+        url("../images/heroes/san_antonio.png");
+
+    background-size: cover;
+    background-position: center right;
+    background-repeat: no-repeat;
+}
+
+.policy-page-hero .container {
+    position: relative;
+    z-index: 1;
+}
+
+.policy-page-hero h1 {
+    max-width: 850px;
+    margin-bottom: 24px;
+    color: var(--white);
+    font-size: clamp(2.7rem, 5vw, 4.6rem);
+}
+
+.policy-page-lead {
+    max-width: 700px;
+    margin-bottom: 0;
+    color: #eeeae2;
+    font-size: clamp(1.1rem, 2vw, 1.3rem);
+}
+
+/* Main policy content */
+
+.policy-content {
+    padding: 100px 0;
+    background: var(--cream);
+}
+
+.policy-notice {
+    max-width: 900px;
+    margin-bottom: 72px;
+    padding: 42px;
+    border-left: 4px solid var(--gold);
+    background: var(--white);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
+}
+
+.policy-notice h2 {
+    margin-bottom: 18px;
+    font-size: clamp(1.8rem, 3vw, 2.6rem);
+}
+
+.policy-notice p:last-child {
+    max-width: 720px;
+    margin-bottom: 0;
+    color: var(--muted);
+    font-size: 1.08rem;
+}
+
+.policy-content .section-heading > p:last-child {
+    color: var(--muted);
+}
+
+/* Policy cards */
+
+.policy-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+}
+
+.policy-card {
+    padding: 34px;
+    border: 1px solid var(--border);
+    border-top: 4px solid var(--gold);
+    border-radius: 4px;
+    background: var(--white);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.07);
+}
+
+.policy-card-label {
+    margin-bottom: 12px;
+    color: var(--gold);
+    font-size: 0.76rem;
+    font-weight: 800;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+}
+
+.policy-card h3 {
+    margin-bottom: 18px;
+    font-size: clamp(1.35rem, 2vw, 1.7rem);
+}
+
+.policy-card p:last-child {
+    margin-bottom: 0;
+    color: var(--muted);
+}
+
+/* Bottom call to action */
+
+.policy-page-cta {
+    padding: 100px 0;
+    color: #ddd8ce;
+    text-align: center;
+    background: #060a10;
+}
+
+.policy-page-cta .container {
+    max-width: 780px;
+}
+
+.policy-page-cta h2 {
+    color: var(--white);
+}
+
+.policy-page-cta p:not(.eyebrow) {
+    max-width: 600px;
+    margin: 0 auto 30px;
+    font-size: 1.08rem;
+}
+
+/* Tablet */
+
+@media (max-width: 900px) {
+    .policy-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+    .policy-page-hero {
+        padding: 76px 0 82px;
+
+        background-image:
+            linear-gradient(
+                rgba(5, 10, 16, 0.88),
+                rgba(5, 10, 16, 0.94)
+            ),
+            url("../images/heroes/san_antonio.png");
+
+        background-position: 72% center;
+    }
+
+    .policy-content,
+    .policy-page-cta {
+        padding: 72px 0;
+    }
+
+    .policy-notice {
+        margin-bottom: 54px;
+        padding: 30px 26px;
+    }
+
+    .policy-card {
+        padding: 30px 26px;
+    }
+}

@@ -1,0 +1,200 @@
+/* ========================================
+   AREAS OF PRACTICE PAGE
+======================================== */
+
+.practice-page-hero {
+    position: relative;
+    overflow: hidden;
+    padding: 96px 0 104px;
+
+    background-color: #07101c;
+
+    background-image:
+        linear-gradient(
+            90deg,
+            rgba(5, 10, 16, 0.96) 0%,
+            rgba(5, 10, 16, 0.88) 40%,
+            rgba(5, 10, 16, 0.52) 67%,
+            rgba(5, 10, 16, 0.16) 100%
+        ),
+        url("../images/heroes/san_antonio.png");
+
+    background-size: cover;
+    background-position: center right;
+    background-repeat: no-repeat;
+}
+
+/* Remove the decorative gold circle */
+.practice-page-hero::after {
+    display: none;
+}
+
+.practice-page-hero .container {
+    position: relative;
+    z-index: 1;
+}
+
+.practice-page-hero h1 {
+    max-width: 850px;
+    margin-bottom: 24px;
+    color: var(--white);
+    font-size: clamp(2.7rem, 5vw, 4.6rem);
+}
+
+.practice-page-lead {
+    max-width: 700px;
+    margin-bottom: 0;
+    color: #eeeae2;
+    font-size: clamp(1.1rem, 2vw, 1.3rem);
+}
+
+/* Practice-area cards */
+
+.practice-details-section {
+    padding: 100px 0;
+    background: var(--cream);
+}
+
+.practice-details-section .section-heading > p:last-child {
+    color: var(--muted);
+    font-size: 1.08rem;
+}
+
+.practice-detail-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.practice-detail-card {
+    position: relative;
+    min-height: 245px;
+    padding: 38px;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    background: var(--white);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
+    transition:
+        border-color 180ms ease,
+        box-shadow 180ms ease,
+        transform 180ms ease;
+}
+
+.practice-detail-card:hover {
+    border-color: var(--gold);
+    box-shadow: var(--shadow);
+    transform: translateY(-3px);
+}
+
+.practice-card-number {
+    display: block;
+    margin-bottom: 28px;
+    color: var(--gold);
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 0.18em;
+}
+
+.practice-detail-card h2 {
+    margin-bottom: 15px;
+    font-size: clamp(1.4rem, 2.3vw, 1.85rem);
+}
+
+.practice-detail-card p {
+    margin-bottom: 0;
+    color: var(--muted);
+}
+
+/* Mediation guidance */
+
+.practice-guidance-section {
+    padding: 100px 0;
+    color: #ddd8ce;
+    background: #060a10;
+}
+
+.practice-guidance-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+    gap: clamp(50px, 8vw, 100px);
+    align-items: start;
+}
+
+.practice-guidance-section h2,
+.practice-guidance-section h3 {
+    color: var(--white);
+}
+
+.practice-guidance-section h2 {
+    margin-bottom: 24px;
+}
+
+.practice-guidance-section p {
+    margin-bottom: 0;
+}
+
+.practice-guidance-points {
+    display: grid;
+    gap: 18px;
+}
+
+.practice-guidance-point {
+    padding: 26px 28px;
+    border-left: 3px solid var(--gold);
+    background: rgba(255, 255, 255, 0.055);
+}
+
+.practice-guidance-point h3 {
+    margin-bottom: 10px;
+}
+
+/* Bottom call to action */
+
+.practice-page-cta {
+    padding: 100px 0;
+    text-align: center;
+    background: var(--white);
+}
+
+.practice-page-cta .container {
+    max-width: 780px;
+}
+
+.practice-page-cta p:not(.eyebrow) {
+    max-width: 600px;
+    margin: 0 auto 30px;
+    color: var(--muted);
+    font-size: 1.08rem;
+}
+
+/* Tablet */
+
+@media (max-width: 900px) {
+    .practice-guidance-layout {
+        grid-template-columns: 1fr;
+        gap: 42px;
+    }
+}
+
+/* Mobile */
+
+@media (max-width: 680px) {
+    .practice-page-hero {
+        padding: 76px 0 82px;
+    }
+
+    .practice-details-section,
+    .practice-guidance-section,
+    .practice-page-cta {
+        padding: 72px 0;
+    }
+
+    .practice-detail-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .practice-detail-card {
+        min-height: 0;
+        padding: 30px 26px;
+    }
+}
