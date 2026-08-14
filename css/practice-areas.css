@@ -89,7 +89,7 @@
 .practice-card-number {
     display: block;
     margin-bottom: 28px;
-    color: var(--gold);
+    color: var(--gold-on-light);
     font-size: 0.78rem;
     font-weight: 800;
     letter-spacing: 0.18em;

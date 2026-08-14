@@ -199,11 +199,24 @@ a {
 
 .eyebrow {
     margin-bottom: 14px;
-    color: var(--gold);
+    color: var(--gold-on-light);
     font-size: 0.76rem;
     font-weight: 800;
     letter-spacing: 0.18em;
     text-transform: uppercase;
+}
+
+/* Keep the brighter gold when eyebrow text appears on dark backgrounds. */
+.hero .eyebrow,
+.practice-section .eyebrow,
+.pricing-page-hero .eyebrow,
+.pricing-page-cta .eyebrow,
+.practice-page-hero .eyebrow,
+.practice-guidance-section .eyebrow,
+.policy-page-hero .eyebrow,
+.policy-page-cta .eyebrow,
+.schedule-page-hero .eyebrow {
+    color: var(--gold);
 }
 
 .section-heading {
@@ -322,7 +335,7 @@ a {
 .experience-number {
     display: block;
     margin-bottom: 12px;
-    color: var(--gold);
+    color: var(--gold-on-light);
     font-family: "Libre Baskerville", Georgia, "Times New Roman", serif;
     font-size: 3.6rem;
     font-weight: 700;
