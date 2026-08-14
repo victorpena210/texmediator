@@ -1,33 +1,62 @@
 document.addEventListener("DOMContentLoaded", async () => {
-    const headerContainer = document.getElementById("site-header");
+    await Promise.all([
+        loadComponent(
+            "site-header",
+            "components/navbar.html"
+        ),
+        loadComponent(
+            "site-footer",
+            "components/footer.html"
+        )
+    ]);
 
-    if (!headerContainer) {
+    highlightCurrentPage();
+    updateCopyrightYear();
+});
+
+async function loadComponent(containerId, componentPath) {
+    const container = document.getElementById(containerId);
+
+    if (!container) {
         return;
     }
 
     try {
-        const response = await fetch("components/navbar.html");
+        const response = await fetch(componentPath);
 
         if (!response.ok) {
-            throw new Error("Unable to load the navigation.");
+            throw new Error(
+                `Unable to load ${componentPath}`
+            );
         }
 
-        headerContainer.innerHTML = await response.text();
-
-        highlightCurrentPage();
+        container.innerHTML = await response.text();
     } catch (error) {
         console.error(error);
     }
-});
+}
 
 function highlightCurrentPage() {
     const currentPage =
-        window.location.pathname.split("/").pop() || "index.html";
+        window.location.pathname.split("/").pop()
+        || "index.html";
 
-    document.querySelectorAll(".main-navigation a").forEach((link) => {
-        if (link.getAttribute("href") === currentPage) {
-            link.classList.add("active");
-            link.setAttribute("aria-current", "page");
-        }
-    });
+    document
+        .querySelectorAll(".main-navigation a")
+        .forEach((link) => {
+            if (link.getAttribute("href") === currentPage) {
+                link.classList.add("active");
+                link.setAttribute("aria-current", "page");
+            }
+        });
+}
+
+function updateCopyrightYear() {
+    const yearElement =
+        document.getElementById("current-year");
+
+    if (yearElement) {
+        yearElement.textContent =
+            new Date().getFullYear();
+    }
 }

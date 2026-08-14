@@ -1,0 +1,56 @@
+.navigation-panel {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.navigation-toggle {
+    display: none;
+    width: 46px;
+    height: 46px;
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.32);
+    border-radius: 3px;
+    color: var(--white);
+    background: transparent;
+    cursor: pointer;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.navigation-toggle:hover {
+    border-color: var(--gold-light);
+    color: var(--gold-light);
+}
+
+.navigation-toggle:focus-visible {
+    outline: 3px solid var(--gold-light);
+    outline-offset: 3px;
+}
+
+.navigation-toggle-bar {
+    display: block;
+    width: 23px;
+    height: 2px;
+    background: currentColor;
+    transition:
+        transform 180ms ease,
+        opacity 180ms ease;
+}
+
+.navigation-toggle[aria-expanded="true"]
+.navigation-toggle-bar:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+}
+
+.navigation-toggle[aria-expanded="true"]
+.navigation-toggle-bar:nth-child(2) {
+    opacity: 0;
+}
+
+.navigation-toggle[aria-expanded="true"]
+.navigation-toggle-bar:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+}

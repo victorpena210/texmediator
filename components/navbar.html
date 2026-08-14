@@ -11,14 +11,27 @@
         >
     </a>
 
-    <nav class="main-navigation" aria-label="Main navigation">
-        <a href="index.html">Home</a>
-        <a href="practice-areas.html">Areas of Practice</a>
-        <a href="pricing.html">Pricing</a>
-        <a href="schedule.html">Schedule Mediation</a>
-    </nav>
+    <button
+        class="navigation-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="navigation-panel"
+        aria-label="Open navigation"
+    >
+        <span class="navigation-toggle-bar" aria-hidden="true"></span>
+        <span class="navigation-toggle-bar" aria-hidden="true"></span>
+        <span class="navigation-toggle-bar" aria-hidden="true"></span>
+    </button>
 
-    <a href="schedule.html" class="schedule-button">
-        Schedule a Mediation
-    </a>
+    <div class="navigation-panel" id="navigation-panel">
+        <nav class="main-navigation" aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="practice-areas.html">Areas of Practice</a>
+            <a href="pricing.html">Pricing</a>
+        </nav>
+
+        <a href="schedule.html" class="schedule-button">
+            Schedule a Mediation
+        </a>
+    </div>
 </header>
