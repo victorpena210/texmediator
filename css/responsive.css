@@ -205,3 +205,77 @@
         width: 175px;
     }
 }
+
+/* ========================================
+   MOBILE NAVIGATION
+======================================== */
+
+@media (max-width: 960px) {
+    .site-header {
+        position: relative;
+        min-height: 72px;
+        padding: 12px 0;
+
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        gap: 16px;
+
+        text-align: left;
+    }
+
+    .site-brand {
+        width: auto;
+        margin-right: auto;
+    }
+
+    .navigation-toggle {
+        display: flex;
+        flex: 0 0 auto;
+    }
+
+    .navigation-panel {
+        position: absolute;
+        top: calc(100% - 1px);
+        right: 0;
+        left: 0;
+        z-index: 100;
+
+        display: none;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 12px;
+
+        padding: 16px;
+
+        border: 1px solid rgba(255, 255, 255, 0.14);
+        background-color: #060a10;
+        box-shadow: 0 18px 35px rgba(0, 0, 0, 0.32);
+    }
+
+    .navigation-panel.is-open {
+        display: flex;
+    }
+
+    .main-navigation {
+        width: 100%;
+
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+
+        border-top: 0;
+    }
+
+    .main-navigation a {
+        width: 100%;
+        padding: 13px 12px;
+
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+        text-align: left;
+    }
+
+    .schedule-button {
+        width: 100%;
+    }
+}

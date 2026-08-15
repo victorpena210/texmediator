@@ -1,7 +1,20 @@
 .schedule-page-hero {
+    position: relative;
+    overflow: hidden;
     padding: 78px 0;
     text-align: center;
-    background: #060a10;
+    background-color: #060a10;
+
+    background-image:
+        linear-gradient(
+            rgba(5, 10, 16, 0.78),
+            rgba(5, 10, 16, 0.9)
+        ),
+        url("../images/heroes/san_antonio.webp");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .schedule-page-hero h1 {
@@ -72,6 +85,7 @@
 @media (max-width: 700px) {
     .schedule-page-hero {
         padding: 58px 0;
+        background-position: 72% center;
     }
 
     .scheduler-section {
