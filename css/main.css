@@ -395,8 +395,43 @@ a {
     margin-bottom: 10px;
 }
 
+.board-certified-logo {
+    display: block;
+    width: 100%;
+    max-width: 210px;
+    height: auto;
+    margin: 18px 0 26px;
+}
+
 .credentials-note p {
     margin-bottom: 0;
+}
+
+.credentials-list {
+    display: grid;
+    gap: 18px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.credentials-list li {
+    display: grid;
+    gap: 2px;
+}
+
+.credentials-list li + li {
+    padding-top: 18px;
+    border-top: 1px solid var(--border);
+}
+
+.credentials-list strong {
+    color: var(--navy);
+    font-family: "Libre Baskerville", Georgia, "Times New Roman", serif;
+}
+
+.credentials-list span {
+    display: block;
 }
 
 /* Practice areas */
