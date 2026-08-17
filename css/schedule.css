@@ -41,6 +41,15 @@
     text-align: center;
 }
 
+.availability-note {
+    margin-top: 20px;
+    padding: 14px 18px;
+    border-left: 4px solid var(--gold);
+    background: var(--white);
+    color: var(--navy);
+    text-align: left;
+}
+
 .scheduler-card {
     overflow: hidden;
     max-width: 960px;
