@@ -88,7 +88,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     window.matchMedia(
                         "(max-width: 700px)"
                     ).matches
-                        ? 250
+                        ? 300
                         : 400;
 
                 window.scrollTo({
