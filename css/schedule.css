@@ -50,8 +50,50 @@
     text-align: left;
 }
 
+.mediation-booking-options {
+    max-width: 960px;
+    margin: 0 auto 32px;
+}
+
+.mediation-booking-option {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 32px;
+    border: 1px solid var(--border);
+    border-top: 5px solid var(--gold);
+    border-radius: 4px;
+    background: var(--white);
+    box-shadow: var(--shadow);
+}
+
+.mediation-booking-details {
+    max-width: 680px;
+}
+
+.mediation-booking-details h3 {
+    margin-bottom: 4px;
+}
+
+.mediation-booking-price {
+    margin-bottom: 18px;
+    font-size: 1.35rem;
+    font-weight: 600;
+}
+
+.mediation-book-button {
+    flex-shrink: 0;
+    border: 0;
+    cursor: pointer;
+}
+
+.scheduler-card[hidden] {
+    display: none;
+}
+
 .scheduler-card {
-    overflow: hidden;
+    overflow: visible;
     max-width: 960px;
     min-height: 800px;
     margin: 0 auto;
@@ -92,6 +134,15 @@
 }
 
 @media (max-width: 700px) {
+        .mediation-booking-option {
+        flex-direction: column;
+        gap: 24px;
+        padding: 24px;
+    }
+
+    .mediation-book-button {
+        width: 100%;
+    }
     .schedule-page-hero {
         padding: 58px 0;
         background-position: 72% center;
