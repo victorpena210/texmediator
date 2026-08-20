@@ -80,8 +80,6 @@ a {
     position: relative;
     z-index: 10;
     background-color: #060a10;
-
-
 }
 
 .site-header {
@@ -108,20 +106,6 @@ a {
     object-fit: contain;
 }
 
-.brand-name {
-    font-family: "Libre Baskerville", Georgia, "Times New Roman", serif;
-    font-size: 1.25rem;
-    font-weight: 700;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-}
-
-.brand-title {
-    color: var(--gold-light);
-    font-size: 0.78rem;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-}
 
 .main-navigation {
     display: flex;
@@ -224,77 +208,6 @@ a {
     margin-bottom: 48px;
 }
 
-/* Hero */
-.home-hero {
-    position: relative;
-    overflow: hidden;
-    padding: 80px 0 90px;
-    background:
-        linear-gradient(
-            90deg,
-            rgba(0, 0, 0, 0.98),
-            rgba(25, 25, 25, 0.94)
-        );
-}
-
-.home-hero::after {
-    position: absolute;
-    top: -180px;
-    right: -120px;
-    width: 520px;
-    height: 520px;
-    border: 1px solid rgba(200, 154, 56, 0.23);
-    border-radius: 50%;
-    content: "";
-}
-
-.hero-layout {
-    position: relative;
-    z-index: 1;
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) 330px;
-    align-items: center;
-    gap: clamp(40px, 6vw, 75px);
-}
-
-.hero-portrait {
-    width: 330px;
-    margin: 0 auto;
-}
-
-.hero-portrait-image {
-    display: block;
-    width: 100%;
-    height: 330px;
-    border: 1px solid rgba(255, 197, 104, 0.55);
-    border-radius: 3px;
-    object-fit: cover;
-    object-position: center top;
-    box-shadow: 0 24px 55px rgba(0, 0, 0, 0.38);
-}
-
-.hero-portrait figcaption {
-    display: flex;
-    justify-content: space-between;
-    gap: 16px;
-    padding-top: 14px;
-    color: var(--white);
-    font-size: 0.9rem;
-}
-
-.hero-portrait figcaption strong {
-    font-family: "Libre Baskerville", Georgia, "Times New Roman", serif;
-    font-size: 1rem;
-}
-
-.hero-portrait figcaption span {
-    color: var(--gold-light);
-}
-
-.hero-content {
-    position: relative;
-    z-index: 1;
-}
 
 .hero-introduction {
     max-width: 660px;
@@ -485,16 +398,6 @@ a {
     transform: translateY(-3px);
 }
 
-.section-link {
-    margin-top: 32px;
-}
-
-.section-link a {
-    color: var(--gold-light);
-    font-weight: 700;
-    text-decoration: none;
-}
-
 /* Final call to action */
 
 .final-cta {
@@ -540,11 +443,6 @@ a {
     display: none;
 }
 
-/* Keep the text and Hugh's photograph above the background */
-.hero.hero--san-antonio .hero-layout {
-    position: relative;
-    z-index: 1;
-}
 
 /* ========================================
    TRANSPARENT HERO PORTRAIT
