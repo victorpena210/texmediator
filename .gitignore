@@ -1,2 +1,7 @@
 .DS_Store
 dist/
+.env
+.env.*
+!.env.example
+node_modules/
+.netlify/
