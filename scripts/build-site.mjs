@@ -314,17 +314,19 @@ async function injectSharedComponents() {
         }
 
 
-        /*
-         * Replace the empty header placeholder
-         * with the actual navbar HTML.
-         */
-        html = html.replace(
-            HEADER_PLACEHOLDER,
-            [
-                "<!-- Shared navbar injected at build time for SEO/AEO. -->",
-                navbar
-            ].join("\n")
-        );
+
+html = html.replace(
+    HEADER_PLACEHOLDER,
+    [
+        '<div id="site-header">',
+        "    <!-- Shared navbar injected at build time for SEO/AEO. -->",
+        indentBlock(
+            navbar,
+            4
+        ),
+        "</div>"
+    ].join("\n")
+);
 
 
         /*
